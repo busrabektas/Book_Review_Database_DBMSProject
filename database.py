@@ -11,7 +11,7 @@ def initialize_connection():
         password = "DB_PASSWORD" )
     
 
-    cursor = conn.cursor()  
+    cursor = conn.cursor(buffered=True)  
     cursor.execute("USE DB_NAME") 
 
 
